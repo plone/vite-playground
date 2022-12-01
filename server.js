@@ -5,8 +5,6 @@ import express from "express";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const isTest = process.env.VITEST;
-
 process.env.MY_CUSTOM_SECRET = "API_KEY_qwertyuiop";
 
 export async function createServer(
@@ -31,15 +29,15 @@ export async function createServer(
 			await import("vite")
 		).createServer({
 			root,
-			logLevel: isTest ? "error" : "info",
+			// logLevel: isTest ? "error" : "info",
 			server: {
 				middlewareMode: true,
-				watch: {
-					// During tests we edit the files too fast and sometimes chokidar
-					// misses change events, so enforce polling for consistency
-					usePolling: true,
-					interval: 100,
-				},
+				// watch: {
+				// 	// During tests we edit the files too fast and sometimes chokidar
+				// 	// misses change events, so enforce polling for consistency
+				// 	usePolling: true,
+				// 	interval: 100,
+				// },
 				hmr: {
 					port: hmrPort,
 				},
@@ -94,10 +92,8 @@ export async function createServer(
 	return { app, vite };
 }
 
-if (!isTest) {
-	createServer().then(({ app }) =>
-		app.listen(3000, () => {
-			console.log("http://localhost:3000");
-		})
-	);
-}
+createServer().then(({ app }) =>
+	app.listen(3000, () => {
+		console.log("http://localhost:3000");
+	})
+);
