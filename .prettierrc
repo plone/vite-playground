@@ -1,0 +1,14 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "*.overrides",
+      "options": {
+        "parser": "less"
+      }
+    }
+  ]
+}
