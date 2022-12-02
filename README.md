@@ -20,9 +20,13 @@ Volto Features:
 - [ ] Internal proxy dev/prod
 - [ ] New theming architecture
 
+Tooling:
+
 - [ ] Unit Testing
 - [ ] Acceptance Testing
 - [ ] Storybook
+
+Volto specifics:
 
 - [ ] Volto projects - Rethink in Vite
 - [ ] Adapt Volto dependencies codebase to pnpm
