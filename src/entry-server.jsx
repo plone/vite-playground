@@ -1,12 +1,3 @@
-import ReactDOMServer from 'react-dom/server';
-import { StaticRouter } from 'react-router-dom/server';
-// import { App } from './App';
-import { Routes } from './routes';
+import { render } from '@plone/volto/entry-server';
 
-export function render(url, context) {
-  return ReactDOMServer.renderToString(
-    <StaticRouter location={url} context={context}>
-      <Routes />
-    </StaticRouter>,
-  );
-}
+export { render };

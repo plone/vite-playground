@@ -1,56 +1,65 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@babel/core': '>=7.0.0-0 <8.0.0'
-  '@babel/plugin-syntax-flow': ^7.14.5
-  '@babel/plugin-transform-react-jsx': ^7.14.9
-  '@vitejs/plugin-react': ^2.2.0
-  compression: ^1.7.4
-  eslint: ^8.29.0
-  eslint-config-prettier: ^8.5.0
-  eslint-config-react-app: ^7.0.1
-  eslint-import-resolver-alias: ^1.1.2
-  eslint-plugin-import: ^2.26.0
-  eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-react: ^7.31.11
-  eslint-plugin-react-hooks: ^4.6.0
-  express: ^4.18.2
-  prettier: ^2.8.0
-  react: ^18.2.0
-  react-dom: ^18.2.0
-  react-router-dom: ^6.4.3
-  react-simple-code-editor: ^0.13.1
-  serve-static: ^1.15.0
-  typescript: ^4.9.3
-  vite: ^3.2.4
-  vite-plugin-chunk-split: ^0.4.4
+importers:
 
-dependencies:
-  react: 18.2.0
-  react-dom: 18.2.0_react@18.2.0
-  react-router-dom: 6.4.4_biqbaboplfbrettd7655fr4n2y
-  react-simple-code-editor: 0.13.1_biqbaboplfbrettd7655fr4n2y
+  .:
+    specifiers:
+      '@babel/core': '>=7.0.0-0 <8.0.0'
+      '@babel/plugin-syntax-flow': ^7.14.5
+      '@babel/plugin-transform-react-jsx': ^7.14.9
+      '@plone/volto': workspace:*
+      '@vitejs/plugin-react': ^2.2.0
+      compression: ^1.7.4
+      eslint: ^8.29.0
+      eslint-config-prettier: ^8.5.0
+      eslint-config-react-app: ^7.0.1
+      eslint-import-resolver-alias: ^1.1.2
+      eslint-plugin-import: ^2.26.0
+      eslint-plugin-prettier: ^4.2.1
+      eslint-plugin-react: ^7.31.11
+      eslint-plugin-react-hooks: ^4.6.0
+      express: ^4.18.2
+      prettier: ^2.8.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      react-router-dom: ^6.4.3
+      react-simple-code-editor: ^0.13.1
+      serve-static: ^1.15.0
+      typescript: ^4.9.3
+      vite: ^3.2.4
+      vite-plugin-chunk-split: ^0.4.4
+    dependencies:
+      '@plone/volto': link:packages/volto
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-router-dom: 6.4.4_biqbaboplfbrettd7655fr4n2y
+      react-simple-code-editor: 0.13.1_biqbaboplfbrettd7655fr4n2y
+    devDependencies:
+      '@babel/core': 7.20.5
+      '@babel/plugin-syntax-flow': 7.18.6_@babel+core@7.20.5
+      '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.5
+      '@vitejs/plugin-react': 2.2.0_vite@3.2.4
+      compression: 1.7.4
+      eslint: 8.29.0
+      eslint-config-prettier: 8.5.0_eslint@8.29.0
+      eslint-config-react-app: 7.0.1_whfrw3fqvhtubuuapyilryph4e
+      eslint-import-resolver-alias: 1.1.2_fkfqfehjtk7sk2efaqbgxsuasa
+      eslint-plugin-import: 2.26.0_eslint@8.29.0
+      eslint-plugin-prettier: 4.2.1_nrhoyyjffvfyk4vtlt5destxgm
+      eslint-plugin-react: 7.31.11_eslint@8.29.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.29.0
+      express: 4.18.2
+      prettier: 2.8.0
+      serve-static: 1.15.0
+      typescript: 4.9.3
+      vite: 3.2.4
+      vite-plugin-chunk-split: 0.4.4
 
-devDependencies:
-  '@babel/core': 7.20.5
-  '@babel/plugin-syntax-flow': 7.18.6_@babel+core@7.20.5
-  '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.5
-  '@vitejs/plugin-react': 2.2.0_vite@3.2.4
-  compression: 1.7.4
-  eslint: 8.29.0
-  eslint-config-prettier: 8.5.0_eslint@8.29.0
-  eslint-config-react-app: 7.0.1_whfrw3fqvhtubuuapyilryph4e
-  eslint-import-resolver-alias: 1.1.2_fkfqfehjtk7sk2efaqbgxsuasa
-  eslint-plugin-import: 2.26.0_eslint@8.29.0
-  eslint-plugin-prettier: 4.2.1_nrhoyyjffvfyk4vtlt5destxgm
-  eslint-plugin-react: 7.31.11_eslint@8.29.0
-  eslint-plugin-react-hooks: 4.6.0_eslint@8.29.0
-  express: 4.18.2
-  prettier: 2.8.0
-  serve-static: 1.15.0
-  typescript: 4.9.3
-  vite: 3.2.4
-  vite-plugin-chunk-split: 0.4.4
+  packages/volto:
+    specifiers:
+      sade: ^1.8.1
+    dependencies:
+      sade: 1.8.1
 
 packages:
 
@@ -3542,6 +3551,11 @@ packages:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
     dev: true
 
+  /mri/1.2.0:
+    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
+    engines: {node: '>=4'}
+    dev: false
+
   /ms/2.0.0:
     resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=}
     dev: true
@@ -3985,6 +3999,13 @@ packages:
     dependencies:
       queue-microtask: 1.2.3
     dev: true
+
+  /sade/1.8.1:
+    resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
+    engines: {node: '>=6'}
+    dependencies:
+      mri: 1.2.0
+    dev: false
 
   /safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}

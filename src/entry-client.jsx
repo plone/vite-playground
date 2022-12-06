@@ -1,10 +1,3 @@
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes } from './routes';
+import client from '@plone/volto/entry-client';
 
-ReactDOM.hydrateRoot(
-  document.getElementById('app'),
-  <BrowserRouter>
-    <Routes />
-  </BrowserRouter>,
-);
+client();

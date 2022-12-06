@@ -29,7 +29,7 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
-          ['@plone/volto', './packages/volto/src'],
+          ['@plone/volto', './packages/volto'],
           ['@root', './src'],
         ],
         extensions: ['.js', '.jsx', '.json'],
