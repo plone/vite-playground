@@ -9,11 +9,8 @@ module.exports = {
     jasmine: true,
   },
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2021,
     sourceType: 'module',
-    ecmaFeatures: {
-      legacyDecorators: true,
-    },
   },
   rules: {
     'import/no-unresolved': 1,
@@ -29,8 +26,8 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
-          ['@plone/volto', './packages/volto'],
-          ['@root', './src'],
+          ['@plone/volto', './src'],
+          ['@root', '../../src'],
         ],
         extensions: ['.js', '.jsx', '.json'],
       },

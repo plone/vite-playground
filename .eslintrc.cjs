@@ -9,11 +9,8 @@ module.exports = {
     jasmine: true,
   },
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2021,
     sourceType: 'module',
-    ecmaFeatures: {
-      legacyDecorators: true,
-    },
   },
   rules: {
     'import/no-unresolved': 1,
@@ -37,4 +34,12 @@ module.exports = {
     },
     'import/core-modules': ['load-volto-addons'],
   },
+  overrides: [
+    {
+      files: ['vite.config.js'],
+      rules: {
+        'import/no-unresolved': 0,
+      },
+    },
+  ],
 };

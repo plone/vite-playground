@@ -9,13 +9,13 @@ Volto Features:
 - [x] React Router 6.4
 - [x] Routes as JS object format
 - [ ] React Router 6.4 data fetching
-- [ ] Code splitting
+- [x] Code splitting
 - [ ] Lazy Load component/modules on demand (in a @loadable/component fashion)
 - [ ] App state store (Redux)
 - [ ] Server state cache/store (@tanstack/react-query)
-- [ ] Configuration registry
-- [ ] Shadowing and Component registry
-- [ ] Add-ons architecture
+- [x] Configuration registry
+- [x] Shadowing and Component registry
+- [x] Add-ons architecture
 - [ ] Seamless mode
 - [ ] Internal proxy dev/prod
 - [ ] New theming architecture
